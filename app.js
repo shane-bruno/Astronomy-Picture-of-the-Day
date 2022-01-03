@@ -20,5 +20,6 @@ const displayData = data => {
     document.getElementById('picture-description').textContent = data.explanation
 }
 
-fetchNASAData() 
+fetchNASAData()
 
+console.log("hello world")
