@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Quantico:wght@400;700&display=swap" rel="stylesheet">
     <title>NASA Astronomy Picture of Day</title>
 </head>
 <body>
-    <h1 id="page-title">Astronomy Picture of the Day</h1>
-    <div id="container">
-        <div id="picture-title-creds-container">
+    <section>
+        <h1 id="page-title">Astronomy Picture of the Day</h1>
+    </section>
+    <section>
+        <div id="container">
             <h2 id="picture-title"></h2>
             <p id="photo-creds"></p>
+            <form>
+                <label for="date-selector">
+                    <input id="date-selector" type="date" min="" max="">
+                </label>
+            </form>
+            
+            <p id="picture-description">
+            </p>
+            <img src="" id="picture" alt="astronomy image by NASA">
         </div>
-        <input id="date-selector"type="date">
-        <p id="picture-description">
-        </p>
-        <img src="" id="picture" alt="astronomy image by NASA">
-    </div>
+    </section>
+    
     <script type="text/javascript" src="config.js"></script>
     <script src="app.js"></script>
 </body>

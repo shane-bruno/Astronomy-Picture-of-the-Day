@@ -15,7 +15,7 @@ const fetchNASAData = async () => {
 
 const displayData = data => {
     document.getElementById('picture-title').textContent = data.title
-    document.getElementById('photo-creds').textContent = data.copyright
+    document.getElementById('photo-creds').textContent = "Photo Creds: " + data.copyright
     document.getElementById('date-selector').textContent = data.date
     document.getElementById('picture').src = data.hdurl
     document.getElementById('picture-description').textContent = data.explanation
